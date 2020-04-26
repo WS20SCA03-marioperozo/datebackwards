@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
             //Move self one day into the future.
 
-            mutating func next() {
+            mutating func prev() {
                 
                 if month > 1 {
                     month -= 1;
@@ -69,11 +69,11 @@ class ViewController: UIViewController {
         print("Date.numberOfDaysInYear() = \(Date.numberOfDaysInYear())");
 
         var newYearsDay: Date = Date(year: 2020, month: 1, day: 1);
-        newYearsDay.next();
+        newYearsDay.prev();
         print("\(newYearsDay.month)/\(newYearsDay.day)/\(newYearsDay.year)");
 
         var marchFirst: Date = Date(year: 2020, month: 3, day: 1);
-        marchFirst.next();
+        marchFirst.prev();
         print("\(marchFirst.month)/\(marchFirst.day)/\(marchFirst.year)");
         
     }
